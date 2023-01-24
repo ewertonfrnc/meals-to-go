@@ -33,7 +33,9 @@ export const ErrorContainer = styled.View`
 export const AccountContainer = styled.View`
   background-color: rgba(255, 255, 255, 0.9);
   padding: ${(props) => props.theme.space[4]};
-  margin-top: ${(props) => props.theme.space[2]};
+
+  position: absolute;
+  bottom: 15%;
 `
 
 export const AuthInput = styled(TextInput)`
@@ -44,4 +46,11 @@ export const AuthButton = styled(Button).attrs({
   color: colors.brand.primary,
 })`
   padding: ${(props) => props.theme.space[2]};
+`
+
+export const AnimationWrapper = styled.View`
+  width: 100%;
+  height: 100%;
+  padding: ${(props) => props.theme.space[2]};
+  position: absolute;
 `

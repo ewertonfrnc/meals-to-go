@@ -1,5 +1,8 @@
+import LottieView from 'lottie-react-native'
+
 import { Spacer } from '../../../components/spacer/spacer.component'
 import {
+  AnimationWrapper,
   AccountBackground,
   AccountCover,
   AccountContainer,
@@ -12,9 +15,19 @@ const AccountScreen = ({ navigation }) => {
     <AccountBackground>
       <AccountCover />
 
+      <AnimationWrapper>
+        <LottieView
+          key='animation'
+          autoPlay
+          loop
+          resizeMode='cover'
+          source={require('../../../../assets/delivery.json')}
+        />
+      </AnimationWrapper>
+
       <AccountContainer>
         <Spacer position='bottom' size='large'>
-          <Title>Meals To Go</Title>
+          <Title>Bora comer?</Title>
         </Spacer>
 
         <AuthButton

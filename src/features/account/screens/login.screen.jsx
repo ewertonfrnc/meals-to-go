@@ -66,12 +66,6 @@ const LoginScreen = ({ navigation }) => {
           )}
         </Spacer>
       </AccountContainer>
-
-      <Spacer size='large'>
-        <AuthButton mode='contained' onPress={() => navigation.goBack()}>
-          Voltar
-        </AuthButton>
-      </Spacer>
     </AccountBackground>
   )
 }
