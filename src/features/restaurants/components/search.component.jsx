@@ -17,7 +17,7 @@ const Search = ({ isFavouritesToggled, onFavouritesToggled }) => {
       <Searchbar
         icon={isFavouritesToggled ? 'heart' : 'heart-outline'}
         onIconPress={onFavouritesToggled}
-        placeholder='Procurar'
+        placeholder='Search'
         value={searchKeyword}
         onSubmitEditing={() => search(searchKeyword)}
         onChangeText={(text) => setSearchKeyword(text)}

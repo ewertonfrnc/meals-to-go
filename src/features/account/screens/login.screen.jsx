@@ -37,7 +37,7 @@ const LoginScreen = ({ navigation }) => {
         />
         <Spacer size='large'>
           <AuthInput
-            label='Senha'
+            label='Password'
             value={password}
             textContentType='password'
             secureTextEntry
@@ -61,7 +61,7 @@ const LoginScreen = ({ navigation }) => {
               mode='contained'
               onPress={() => onLogin(email, password)}
             >
-              Entrar
+              Login
             </AuthButton>
           )}
         </Spacer>

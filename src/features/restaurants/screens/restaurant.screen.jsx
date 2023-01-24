@@ -10,7 +10,11 @@ import RestaurantInfoCard from '../components/restaurant-info-card.component'
 import Search from '../components/search.component'
 import FavouritesBar from '../../../components/favourites/favourites-bar.component'
 
-import { ListContainer, List, LoadingContainer } from './restaurant.styles'
+import {
+  ListContainer,
+  RestaurantList,
+  LoadingContainer,
+} from './restaurant.styles'
 
 const RestaurantScreen = ({ navigation }) => {
   const { restaurants, isLoading, error } = useContext(RestaurantsContext)
@@ -26,7 +30,10 @@ const RestaurantScreen = ({ navigation }) => {
       />
 
       {isToggled && (
-        <FavouritesBar onNavigate={navigation.navigate} favourites={favourites} />
+        <FavouritesBar
+          onNavigate={navigation.navigate}
+          favourites={favourites}
+        />
       )}
 
       <ListContainer>
@@ -35,7 +42,7 @@ const RestaurantScreen = ({ navigation }) => {
             <ActivityIndicator animating={true} size='large' />
           </LoadingContainer>
         ) : (
-          <List
+          <RestaurantList
             data={restaurants}
             renderItem={({ item }) => (
               <TouchableOpacity

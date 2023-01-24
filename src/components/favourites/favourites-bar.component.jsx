@@ -19,7 +19,7 @@ const FavouritesBar = ({ favourites, onNavigate }) => {
   return (
     <FavouritesWrapper>
       <Spacer variant='left.large'>
-        <Text variant='hint'>Favoritos</Text>
+        <Text variant='hint'>Favourites</Text>
       </Spacer>
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>

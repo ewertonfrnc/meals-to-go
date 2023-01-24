@@ -36,7 +36,7 @@ const RegisterScreen = ({ navigation }) => {
         />
         <Spacer size='large'>
           <AuthInput
-            label='Senha'
+            label='Password'
             value={password}
             textContentType='password'
             secureTextEntry
@@ -47,7 +47,7 @@ const RegisterScreen = ({ navigation }) => {
 
         <Spacer size='large'>
           <AuthInput
-            label='Confirmar senha'
+            label='Confirm password'
             value={repeatedPassword}
             textContentType='password'
             secureTextEntry
@@ -71,7 +71,7 @@ const RegisterScreen = ({ navigation }) => {
               mode='contained'
               onPress={() => onRegister(email, password, repeatedPassword)}
             >
-              Criar conta
+              Register
             </AuthButton>
           )}
         </Spacer>

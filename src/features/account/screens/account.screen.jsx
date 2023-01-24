@@ -27,14 +27,14 @@ const AccountScreen = ({ navigation }) => {
 
       <AccountContainer>
         <Spacer position='bottom' size='large'>
-          <Title>Bora comer?</Title>
+          <Title>Meals To Go</Title>
         </Spacer>
 
         <AuthButton
           mode='contained'
           onPress={() => navigation.navigate('login')}
         >
-          Entrar
+          Login
         </AuthButton>
 
         <Spacer size='large'>
@@ -42,7 +42,7 @@ const AccountScreen = ({ navigation }) => {
             mode='contained'
             onPress={() => navigation.navigate('register')}
           >
-            Registrar
+            Register
           </AuthButton>
         </Spacer>
       </AccountContainer>
